@@ -193,33 +193,41 @@
         
             <section id="order" class="order-section">
                 <div class="order-container">
-                  
-                    <div class="map-container">
-                        <iframe src="https://yandex.ru/map-widget/v1/?ll=27.546299%2C53.871403&z=17&pt=27.546299,53.871403,pm2rdl">
-                        </iframe>
-                    </div>
-                      
-                
+              
+                  <div class="map-container">
+                    <iframe src="https://yandex.ru/map-widget/v1/?ll=27.546299%2C53.871403&z=17&pt=27.546299,53.871403,pm2rdl"></iframe>
+                  </div>
+              
                   <div class="form-wrapper">
                     <h2 class="form-title">Заказать звонок</h2>
                     <form class="order-form" action="#" method="post">
-                      <input type="text" name="surname" placeholder="Фамилия" required>
-                      <input type="text" name="name" placeholder="Имя" required>
-                      <input type="text" name="patronymic" placeholder="Отчество" required>
-                      <input type="email" name="email" placeholder="Электронная почта" required>
-                      
+              
+                      <label for="surname" class="visually-hidden">Фамилия</label>
+                      <input type="text" id="surname" name="surname" placeholder="Фамилия" required>
+              
+                      <label for="name" class="visually-hidden">Имя</label>
+                      <input type="text" id="name" name="name" placeholder="Имя" required>
+              
+                      <label for="patronymic" class="visually-hidden">Отчество</label>
+                      <input type="text" id="patronymic" name="patronymic" placeholder="Отчество" required>
+              
+                      <label for="email" class="visually-hidden">Электронная почта</label>
+                      <input type="email" id="email" name="email" placeholder="Электронная почта" required>
+              
+                      <label for="phone" class="visually-hidden">Телефон</label>
                       <div class="phone-group">
                         <span class="fixed-code">+375</span>
-                        <input type="tel" name="phone" placeholder="29 (33, 25)" pattern="(29|33|25)[0-9]{7}" required>
+                        <input type="tel" id="phone" name="phone" placeholder="29 (33, 25)" pattern="(29|33|25)[0-9]{7}" required>
                       </div>
-                      
-                      <input type="time" name="time" required>
-                      <p class="time-note">В данной строке необходимо указать удобное для вас время звонка</p>
-                      
+              
+                      <label for="time" class="visually-hidden">Время звонка</label>
+                      <input type="time" id="time" name="time" required>
+                      <p class="time-note">Укажите удобное для вас время звонка</p>
+              
                       <button type="submit" class="submit-button">Отправить заявку</button>
                     </form>
                   </div>
-                
+              
                 </div>
               </section>
               
